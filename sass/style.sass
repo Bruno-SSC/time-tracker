@@ -12,32 +12,32 @@ html
         box-sizing: border-box
     body
         font-size: 62.5%
+        font-family: variables.$Family
+        color: white
         background-color: variables.$Very_dark_blue
-        height: 100vh
-        display: flex
-        justify-content: center
-        align-items: center
-        main
+        min-height: 100vh
+        display: grid
+        place-items: center
+        padding: 1rem
+        // pra dar um espaço entre os itens e a página (mobile)
+        .container
             display: flex
-            justify-content: center
-            align-items: center
-            height: 80vh
-            width: 80vw
-            gap: 1.5rem
-            #report
+            flex-wrap: wrap
+            gap: clamp(1rem, 2.5vw, 2rem)
+            // clamp define um minimo, um ideal e um máximo que muda de acordo o tamanho da janela
+            .card
                 @include mixins.card
-                height: 29rem
-                img
-                    align-self: flex-start
-                    width: 5rem
-                    height: 5rem
-                    border-radius: 50%
-            #activities
-                display: flex
-                flex-direction: column
-                gap: 20px
-                #up, #down
-                    gap: 20px
-                    display: flex
-                .activity
-                    @include mixins.card
+                //
+            .card--avatar
+                @include mixins.avatar
+                //
+                .card--avatar-top
+                    @include mixins.avatar
+                    //
+                .card--avatar-bottom
+                    @include mixins.avatar
+                    //
+            .container-timecards
+                //
+                .timecards
+                    //
