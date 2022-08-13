@@ -5,13 +5,13 @@ HTML body main #activities .subsection:nth-child(1) .activity:nth-child(1)::befo
   top: -45px;
   left: 0;
   height: 100%;
-  width: 99%;
+  width: 100%;
   z-index: -1;
   border-radius: 1rem;
   background-color: hsl(15deg, 100%, 70%);
 }
 HTML body main #activities .subsection:nth-child(1) .activity:nth-child(1)::after {
-  content: url("../images/icon-work.svg");
+  content: url("../../images/icon-work.svg");
   position: absolute;
   top: -45px;
   right: 10px;
@@ -25,13 +25,13 @@ HTML body main #activities .subsection:nth-child(1) .activity:nth-child(2)::befo
   top: -45px;
   left: 0;
   height: 100%;
-  width: 99%;
+  width: 100%;
   z-index: -1;
   border-radius: 1rem;
   background-color: hsl(195deg, 74%, 62%);
 }
 HTML body main #activities .subsection:nth-child(1) .activity:nth-child(2)::after {
-  content: url("../images/icon-play.svg");
+  content: url("../../images/icon-play.svg");
   position: absolute;
   top: -45px;
   right: 10px;
@@ -45,13 +45,13 @@ HTML body main #activities .subsection:nth-child(1) .activity:nth-child(3)::befo
   top: -45px;
   left: 0;
   height: 100%;
-  width: 99%;
+  width: 100%;
   z-index: -1;
   border-radius: 1rem;
   background-color: hsl(348deg, 100%, 68%);
 }
 HTML body main #activities .subsection:nth-child(1) .activity:nth-child(3)::after {
-  content: url("../images/icon-study.svg");
+  content: url("../../images/icon-study.svg");
   position: absolute;
   top: -45px;
   right: 10px;
@@ -65,13 +65,13 @@ HTML body main #activities .subsection:nth-child(2) .activity:nth-child(1)::befo
   top: -45px;
   left: 0;
   height: 100%;
-  width: 99%;
+  width: 100%;
   z-index: -1;
   border-radius: 1rem;
   background-color: hsl(145deg, 58%, 55%);
 }
 HTML body main #activities .subsection:nth-child(2) .activity:nth-child(1)::after {
-  content: url("../images/icon-exercise.svg");
+  content: url("../../images/icon-exercise.svg");
   position: absolute;
   top: -45px;
   right: 10px;
@@ -85,13 +85,13 @@ HTML body main #activities .subsection:nth-child(2) .activity:nth-child(2)::befo
   top: -45px;
   left: 0;
   height: 100%;
-  width: 99%;
+  width: 100%;
   z-index: -1;
   border-radius: 1rem;
   background-color: hsl(264deg, 64%, 52%);
 }
 HTML body main #activities .subsection:nth-child(2) .activity:nth-child(2)::after {
-  content: url("../images/icon-social.svg");
+  content: url("../../images/icon-social.svg");
   position: absolute;
   top: -45px;
   right: 10px;
@@ -105,13 +105,13 @@ HTML body main #activities .subsection:nth-child(2) .activity:nth-child(3)::befo
   top: -45px;
   left: 0;
   height: 100%;
-  width: 99%;
+  width: 100%;
   z-index: -1;
   border-radius: 1rem;
   background-color: hsl(43deg, 84%, 65%);
 }
 HTML body main #activities .subsection:nth-child(2) .activity:nth-child(3)::after {
-  content: url("../images/icon-self-care.svg");
+  content: url("../../images/icon-self-care.svg");
   position: absolute;
   top: -45px;
   right: 10px;
@@ -150,6 +150,8 @@ html body main #activities .subsection .activity .activity-info {
   width: 13.3333333333vw;
   display: flex;
   justify-content: space-between;
+}
+html body main #activities .subsection .activity .activity-info p {
   font-size: 1.2vw;
   color: #9c9c9c;
 }
@@ -171,6 +173,8 @@ html body main #activities .subsection .activity .activity-hours {
   gap: 2vh;
   margin-bottom: 3vh;
   justify-content: flex-end;
+}
+html body main #activities .subsection .activity .activity-hours p {
   font-size: 1.2vw;
   color: #9c9c9c;
 }
@@ -215,6 +219,8 @@ html body main #report #report-info #img-container img {
 html body main #report #report-info #avatar-name {
   width: 21vw;
   height: 24.5vh;
+}
+html body main #report #report-info #avatar-name p {
   font-size: 1.2vw;
   color: #9c9c9c;
 }
@@ -232,6 +238,8 @@ html body main #report #report-time {
   gap: 2vh;
   height: 21vh;
   width: 21vw;
+}
+html body main #report #report-time p {
   font-size: 1.2vw;
   color: #9c9c9c;
 }

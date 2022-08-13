@@ -15,7 +15,7 @@ Projeto desenvolvido através do material fornecido pelo site: [Frontendmentor](
 - Melhorar skills como front-end developer
 
 ---
-<h3 align="center"> Figma 📝 </h3>
+<h3 align="center"> Design 📝 </h3>
 
 <div height="590em"><img src="./images/desktop-design.jpg" alt="imagem"></div>
 
