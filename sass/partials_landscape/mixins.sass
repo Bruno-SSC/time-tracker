@@ -1,0 +1,42 @@
+@use '../variables'
+
+@mixin card
+    position: relative
+    width: 80vw
+    height: 20vw
+    background-color: variables.$Dark_blue
+    border-radius: 1rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 4vh
+    // title: estilização dos elementos dentro do card
+    
+@mixin before($bg)
+    content: ''
+    position: absolute
+    top: -45px
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: -1
+    border-radius: 1rem
+    background-color: $bg
+
+@mixin after($img)
+    content: $img
+    position: absolute
+    top: -45px
+    right: 10px
+    mix-blend-mode: color-burn
+    z-index: -1
+    overflow: hidden
+
+@mixin text
+    p
+        font-size: 4.6vw
+        color: white
+    h1
+        font-size: 8vw
+        font-weight: variables.$W300
+        color: white

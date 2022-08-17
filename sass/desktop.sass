@@ -1,0 +1,45 @@
+@use './partials_web/mixins'
+@use 'variables'
+
+@media only screen and (min-width: 1000px) and (min-height: 700px)
+    html
+        width: 100vw
+        height: 100vh
+        // title: definição do tamanho máximo da página
+        *
+            margin: 0
+            padding: 0
+            text-decoration: none
+            list-style: none
+            box-sizing: border-box
+            // title: reset dos elementos
+        body
+            font-size: 62.5%
+            font-family: variables.$Family
+            // title: adaptação da fonte para browsers antigos
+            background-color: variables.$Very_dark_blue
+            height: 100vh
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 2rem
+            // title: alinhamento do main e do footer
+            main
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 70vw
+                height: 70vh
+                gap: 1rem
+                @import './partials_web/card-avatar'
+                @import './partials_web/activities'
+                @import './partials_web/activity'
+                // title: alinhamento do card de usuário e seção de atividades
+            footer
+                .attribution
+                    font-size: 1rem
+                    text-align: center
+                    color: white
+                    a
+                        color: hsl(228, 45%, 44%)
