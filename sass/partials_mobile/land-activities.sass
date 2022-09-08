@@ -12,7 +12,7 @@
         align-items: center
         gap: 15vw
         .activity
-            @include mixins.card
+            @include land_mix.card
             // title: estilização dos cards em si
             .activity-info
                 padding-top: 4vh
@@ -21,7 +21,7 @@
                 display: flex
                 justify-content: space-between
                 align-items: center
-                @include mixins.text
+                @include land_mix.text
                 p:nth-child(2):hover
                     cursor: pointer
                     color: white
@@ -34,7 +34,7 @@
                 align-items: center
                 gap: 4vw
                 padding-bottom: 2vh
-                @include mixins.text
+                @include land_mix.text
                 p
                     font-size: 4vw
         .activity:hover

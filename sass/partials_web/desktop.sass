@@ -1,9 +1,10 @@
-@use './partials_landscape/mixins'
-@use 'variables'
+@use 'mixins'
+@use '../variables'
 
-@media only screen and (max-width: 1000px) and (max-height:700px) and (orientation: landscape)
+@media screen and (min-width: 992px) 
     html
         width: 100vw
+        height: 100vh
         // title: definição do tamanho máximo da página
         *
             margin: 0
@@ -17,7 +18,7 @@
             font-family: variables.$Family
             // title: adaptação da fonte para browsers antigos
             background-color: variables.$Very_dark_blue
-            width: 100vw
+            height: 100vh
             display: flex
             flex-direction: column
             justify-content: center
@@ -25,23 +26,20 @@
             gap: 2rem
             // title: alinhamento do main e do footer
             main
-                margin-top: 5vh
                 display: flex
-                flex-direction: column
                 justify-content: center
                 align-items: center
-                width: 100vw
+                width: 70vw
+                height: 70vh
                 gap: 1rem
-                @import './partials_landscape/card-avatar'
-                @import './partials_landscape/activities'
-                @import './partials_landscape/activity'
+                @import 'card-avatar'
+                @import 'activities'
+                @import 'activity'
                 // title: alinhamento do card de usuário e seção de atividades
-        footer
-            .attribution
-                padding-bottom: 30px
-                width: 80vw
-                font-size: 1rem
-                text-align: center
-                color: white
-                a
-                    color: hsl(228, 45%, 44%)
+            footer
+                .attribution
+                    font-size: 1rem
+                    text-align: center
+                    color: white
+                    a
+                        color: hsl(228, 45%, 44%)

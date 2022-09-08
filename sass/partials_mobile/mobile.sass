@@ -1,7 +1,8 @@
-@use './partials_mobile/mixins'
-@use 'variables'
+@use 'mixins'
+@use 'land_mix'
+@use '../variables'
 
-@media only screen and (max-width: 700px) and (max-height:1000px) and (orientation: portrait)
+@media only screen and (max-width: 576px)
     html
         width: 100vw
         // title: definição do tamanho máximo da página
@@ -32,9 +33,9 @@
                 align-items: center
                 width: 100vw
                 gap: 1rem
-                @import './partials_mobile/card-avatar'
-                @import './partials_mobile/activities'
-                @import './partials_mobile/activity'
+                @import 'card-avatar'
+                @import 'activities'
+                @import 'activity'
                 // title: alinhamento do card de usuário e seção de atividades
         footer
             .attribution
@@ -45,3 +46,5 @@
                 color: white
                 a
                     color: hsl(228, 45%, 44%)
+
+@import 'landscape'
