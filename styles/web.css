@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+html * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html body {
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226deg, 43%, 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+html main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+html footer .attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+html footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+main .report {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 21vw;
+  height: 70vh;
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 10px;
+  position: relative;
+}
+main .report .info {
+  height: 49vh;
+  width: 21vw;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+main .report .info .profile-pic {
+  height: 24.5vh;
+  width: 21vw;
+}
+main .report .info .profile-pic img {
+  height: 60%;
+  object-fit: fill;
+  margin-top: 1rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+main .report .info .name {
+  width: 21vw;
+  height: 24.5vh;
+}
+main .report .info .name p {
+  font-size: 1.2vw;
+  color: #9c9c9c;
+}
+main .report .info .name h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  color: white;
+  display: flex;
+}
+main .report .info .name span:nth-child(1), main .report .info .name span:nth-child(3) {
+  cursor: pointer;
+}
+main .report .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10%;
+  gap: 2vh;
+  height: 21vh;
+  width: 21vw;
+}
+main .report .time p {
+  font-size: 1.2vw;
+  color: #9c9c9c;
+}
+main .report .time h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  color: white;
+  display: flex;
+}
+main .report .time span:nth-child(1), main .report .time span:nth-child(3) {
+  cursor: pointer;
+}
+main .report .time p:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 1s ease;
+}
+main .report::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 1rem;
+}
+
+main .activities {
+  width: 49vw;
+  height: 70vh;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+main .activities .subsection {
+  height: 35vh;
+  width: 49vw;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+main .activities .subsection .activity {
+  position: relative;
+  height: 70%;
+  width: 16.3333333333vw;
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .activities .subsection .activity .activity-info {
+  margin-top: 2vh;
+  height: 20%;
+  width: 13.3333333333vw;
+  display: flex;
+  justify-content: space-between;
+}
+main .activities .subsection .activity .activity-info p {
+  font-size: 1.2vw;
+  color: #9c9c9c;
+}
+main .activities .subsection .activity .activity-info h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  color: white;
+  display: flex;
+}
+main .activities .subsection .activity .activity-info span:nth-child(1), main .activities .subsection .activity .activity-info span:nth-child(3) {
+  cursor: pointer;
+}
+main .activities .subsection .activity .activity-info p:nth-child(2):hover {
+  cursor: pointer;
+  color: white;
+  transition: all 1s ease;
+}
+main .activities .subsection .activity .activity-hours {
+  height: 70%;
+  width: 13.3333333333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: center;
+}
+main .activities .subsection .activity .activity-hours p {
+  font-size: 1.2vw;
+  color: #9c9c9c;
+}
+main .activities .subsection .activity .activity-hours h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  color: white;
+  display: flex;
+}
+main .activities .subsection .activity .activity-hours span:nth-child(1), main .activities .subsection .activity .activity-hours span:nth-child(3) {
+  cursor: pointer;
+}
+main .activities .subsection .activity:hover {
+  background-color: hsl(235deg, 45%, 30%);
+  transition: all 2s ease;
+}
+
+main .activities .subsection:nth-child(1) .activity:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: hsl(15deg, 100%, 70%);
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(1) .activity:nth-child(1)::after {
+  content: url("../styles/assets/icon-work.svg");
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(1) .activity:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: hsl(195deg, 74%, 62%);
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(1) .activity:nth-child(2)::after {
+  content: url("../styles/assets/icon-play.svg");
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(1) .activity:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: hsl(348deg, 100%, 68%);
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(1) .activity:nth-child(3)::after {
+  content: url("../styles/assets/icon-study.svg");
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(2) .activity:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: hsl(145deg, 58%, 55%);
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(2) .activity:nth-child(1)::after {
+  content: url("../styles/assets/icon-exercise.svg");
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(2) .activity:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: hsl(264deg, 64%, 52%);
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(2) .activity:nth-child(2)::after {
+  content: url("../styles/assets/icon-social.svg");
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(2) .activity:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1rem;
+  background-color: hsl(43deg, 84%, 65%);
+  overflow: hidden;
+}
+main .activities .subsection:nth-child(2) .activity:nth-child(3)::after {
+  content: url("../styles/assets/icon-self-care.svg");
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  mix-blend-mode: color-burn;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=web.css.map */

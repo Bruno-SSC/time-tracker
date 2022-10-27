@@ -1,0 +1,32 @@
+@use 'mixins'
+@use '../variables'
+
+html
+    *
+        margin: 0
+        padding: 0
+        text-decoration: none
+        list-style: none
+        box-sizing: border-box
+    body
+        height: 100vh
+        font-size: 62.5%
+        font-family: variables.$Family
+        background-color: variables.$Very_dark_blue
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 2rem
+    main
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 1rem
+    footer
+        .attribution
+            font-size: 1rem
+            text-align: center
+            color: white
+            a
+                color: hsl(228, 45%, 44%)

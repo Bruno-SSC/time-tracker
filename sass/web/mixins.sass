@@ -2,7 +2,7 @@
 
 @mixin card
     position: relative
-    height: 27.3vh
+    height: 70%
     width: calc(49vw/3)
     background-color: variables.$Dark_blue
     border-radius: 1rem
@@ -14,13 +14,14 @@
 @mixin before($bg)
     content: ''
     position: absolute
-    top: -45px
+    top: -40%
     left: 0
     height: 100%
     width: 100%
     z-index: -1
     border-radius: 1rem
     background-color: $bg
+    overflow: hidden
 
 @mixin after($img)
     content: $img
@@ -36,10 +37,9 @@
         font-size: 1.2vw
         color: #9c9c9c
     h1
-        font-size: 3.5vw
+        font-size: 3vw
         font-weight: variables.$W300
         color: white
         display: flex
-        margin-bottom: 2vh
     span:nth-child(1), span:nth-child(3)
         cursor: pointer
