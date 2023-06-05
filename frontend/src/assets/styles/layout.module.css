@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+.background {
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+.background .content {
+  display: flex;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=layout.module.css.map */

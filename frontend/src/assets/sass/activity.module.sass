@@ -1,0 +1,81 @@
+@use './partials/variables'
+@use './partials/mixins'
+
+.activity
+    height: 270px
+    width: 300px
+    border-radius: 1rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    background-color: variables.$Dark_blue
+    margin-top: 60px
+
+.activity::before
+    content: ''
+    position: absolute
+    top: -60px
+    left: 0
+    height: 200px
+    width: 100%
+    z-index: -1
+    background-color: var(--before-color, white)
+    border-radius: 1rem
+
+.activity::after
+    content: var(--after-image, url())
+    position: absolute
+    top: -45px
+    right: 10px
+    mix-blend-mode: color-burn
+    z-index: -1
+    overflow: hidden
+
+.activity:hover
+    background-color: variables.$Desaturated_blue
+    transition: all 2s ease
+
+.activity .activityInfo
+    margin-top: 2vh
+    height: 20%
+    width: calc(40vw/3)
+    display: flex
+    justify-content: space-between
+    a,p
+        font-size: 1.2vw
+        color: #9c9c9c
+    h1
+        font-size: 3vw
+        font-weight: variables.$W300
+        color: white
+
+.activity .activityHours
+    height: 70%
+    width: calc(40vw/3)
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+    gap: 1vh
+    p
+        font-size: 1.2vw
+        color: #9c9c9c
+    .buttons
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .buttons .btn
+        color: #fff
+        font-size: 3vw
+        border-radius: 50%
+        background-color: var(--color, "#fff")
+        height: 70px
+        width: 70px
+        cursor: pointer
+        outline: none
+        border: none
+        text-align: center
+    .buttons h1
+        font-size: 3vw
+        font-weight: variables.$W300
+        color: white
